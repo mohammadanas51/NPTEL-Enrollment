@@ -1,0 +1,134 @@
+/* Container with glassmorphism vibe */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Glass effect card */
+.form-container {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 40px 32px;
+    width: 100%;
+    max-width: 420px;
+    color: #f1f5f9;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Title */
+.form-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #e2e8f0;
+}
+
+/* Form layout */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Error message */
+.error-message {
+    background-color: rgba(255, 71, 87, 0.1);
+    color: #f87171;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    border-left: 3px solid #f87171;
+}
+
+/* Form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+/* Inputs */
+.form-input {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #f1f5f9;
+    font-size: 15px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Radio buttons */
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #e2e8f0;
+}
+
+.radio-input {
+    width: 16px;
+    height: 16px;
+    accent-color: #38bdf8;
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-button:hover {
+    background-color: #0ea5e9;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+.success-message {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid #10b981;
+}
